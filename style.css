@@ -1,0 +1,123 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    outline: none;
+    transition: .5s ease;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgb(2, 0, 36);
+    background: linear-gradient(90deg,
+            rgba(2, 0, 36, 1) 0%,
+            rgba(51, 149, 109, 1) 61%,
+            rgba(0, 212, 255, 1) 100%);
+}
+
+.container {
+    width: 300px;
+    max-width: 300px;
+    padding: 2rem 1rem;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 2rem;
+    border-radius: 5px;
+}
+
+.container h2 {
+    font-size: 2.1rem;
+    font-weight: 500;
+}
+
+.sign-up {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+
+
+.input-control {
+    width: 100%;
+}
+
+
+.input-control input {
+    width: 100%;
+    height: 4rem;
+    padding: 1rem;
+    border: 2px solid gray;
+    border-radius: .3rem;
+    background-color: rgb(241, 241, 241);
+    font-size: 1.4rem;
+    font-weight: 500;
+}
+
+.input-control .error {
+    color: #dc3545;
+    font-size: 1.4rem;
+    font-weight: 500;
+    margin-top: .2rem;
+    margin-bottom: 0;
+    display: none;
+}
+
+.input-control.success input {
+    border-color: #28a745;
+}
+
+.input-control.error input {
+    border-color: #dc3545;
+}
+
+.form-submit {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.form-submit p {
+    font-size: 1.5em;
+    cursor: pointer;
+}
+
+.form-submit p:hover {
+    opacity: 0.7;
+}
+
+.form-submit p:active {
+    opacity: 0.5;
+}
+
+.btn {
+    padding: 1rem;
+    background-color: rgb(0, 119, 255);
+    border-radius: .3rem;
+    border: none;
+    cursor: pointer;
+    color: #ffffff;
+}
+
+.btn:hover {
+    opacity: 0.7;
+}
+
+.btn:active {
+    opacity: 0.5;
+}
